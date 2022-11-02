@@ -1,5 +1,5 @@
 
-function InputForm(props) {
+function InputForm({id,label,type}) {
   // const id = "myId";
 
   
@@ -7,9 +7,9 @@ function InputForm(props) {
 
   return (
     <div className="inputForm">
-      <label className="font-mono text-lg" htmlFor={`${props.id}+${props.label}`}>{props.label}</label>
+      <label className="font-mono text-lg" htmlFor={`${id}+${label}`}>{label}</label>
       <input className="border-2 border-black h-[30px]  w-[300px]" placeholder="...type here"  
-      id={`${props.id}+${props.label}`} type={props.type} />    
+      id={`${id}+${label}`} type={type} />    
     </div>
   );
 }
